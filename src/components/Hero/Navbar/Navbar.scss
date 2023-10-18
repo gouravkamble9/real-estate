@@ -1,0 +1,25 @@
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+.navLinks ul{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navLinks ul li{
+    list-style: none;
+    color: white;
+}

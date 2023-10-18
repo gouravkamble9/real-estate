@@ -1,0 +1,127 @@
+.hero__section {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.hero{
+  position: relative;
+
+  .glow{
+    position: absolute;
+    z-index: -10;
+  }
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  .left__content {
+    width: 496px;
+    height: 446px;
+
+    .HeroText {
+      width: 496px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h1 {
+        color: var(--mrt-app-headline, #1b1c57);
+        font-family: Lexend;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        span {
+          color: #10b981;
+        }
+      }
+      p {
+        color: var(--mrt-app-neutral-01, #626687);
+        font-family: Lexend;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+      }
+    }
+    .heroSearch {
+      margin-top: 32px;
+      width: 496px;
+      padding: 4px 4px 4px 24px;
+      border-radius: 32px;
+      border: 1px solid var(--neutral-300, #e0e3eb);
+      background: #fff;
+      margin-bottom: 32px;
+
+      .searchContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+        }
+        input {
+          padding: 5px;
+          outline: none;
+          flex: 1 0 0;
+          border: none;
+        }
+        button {
+          border: none;
+          color: white;
+          padding: 12px 16px;
+          border-radius: 32px;
+          cursor: pointer;
+          background: var(--green-500, #10b981);
+          &:hover {
+            background: var(--green-500, #0c9a6b);
+          }
+        }
+      }
+    }
+    .par {
+      color: var(--neutral-500, #888b97);
+      font-family: Lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 200% */
+    }
+    .partnership {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.right {
+  width: 720px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  .heroImage {
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 80px;
+  }
+  .stats{
+    display: flex;
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    gap: 16px;
+
+  }
+}
