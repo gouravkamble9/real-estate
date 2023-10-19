@@ -5,7 +5,7 @@ const HeroCard = ({data,text}) => {
   return (
     <div className='heroCard'>
       <div className='card'>
-      <img src={data} alt="cardImage" />
+      {/* <img src={data} alt="cardImage" /> */}
       <div className='content'>
           <span>{text.name1}</span>
           <p>{text.name2}</p>

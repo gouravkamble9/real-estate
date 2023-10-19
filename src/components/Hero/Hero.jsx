@@ -10,14 +10,17 @@ import heroImage from '../../assets/heroImage.png'
 import profile1 from '../../assets/Ellipse 4.png'
 import house from '../../assets/Ellipse 5.png'
 import HeroCard from '../../utils/heroCard/HeroCard'
+import glow from "../../assets/Vector1.png"
+import glow1 from '../../assets/Vector2.png'
 
 
 
 const Hero = () => {
   return (
     <div className='hero'>
+        <img src={glow} alt="glow1" className='glow1'/>
+        <img src={glow1} alt="glow2" className='glow2'/>
         <header>
-            
         <Navbar/>
         </header>
         <div className='left'>
